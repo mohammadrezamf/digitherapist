@@ -1,7 +1,8 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-
+import { createTheme, MantineProvider } from "@mantine/core";
+import "@mantine/core/styles.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -9,9 +10,7 @@ export const metadata: Metadata = {
 };
 
 const iranSans = localFont({
-  src: [
-    { path: "./fonts/iran-sans/IRANSansXV.woff", weight: "500", style: "normal" },
-  ],
+  src: [{ path: "./fonts/iran-sans/IRANSansXV.woff", weight: "500", style: "normal" }],
   variable: "--font-iran-sans",
 });
 
@@ -20,13 +19,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const theme = createTheme({
+    fontFamily: "var(--font-iran-sans), sans-serif",
+  });
   return (
-    <html
-      lang="fa"
-      dir="rtl"
-      className={`${iranSans.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="fa" dir="rtl" className={`${iranSans.variable} h-full scroll-smooth antialiased`}>
+      <MantineProvider theme={theme} forceColorScheme="light">
+        <body className="flex min-h-full flex-col">{children}</body>
+      </MantineProvider>
     </html>
   );
 }

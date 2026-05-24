@@ -1,0 +1,26 @@
+.sectionTop {
+    background-color: #ffffff; /* رنگ پس‌زمینه سکشن بالا */
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* تنظیمات موج */
+.waveContainer {
+    width: 100%;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* همرنگ سکشن بالایی (محصولات) */
+}
+
+.waveContainer svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.sectionBottom {
+    background-color: #f3f4f6; /* رنگ پس‌زمینه سکشن پایین (باید با ویژگی fill در SVG یکی باشد) */
+    padding: 100px 20px;
+    text-align: center;
+}
