@@ -2,7 +2,6 @@ import { useState, useRef } from "react";
 
 import { Play, X } from "lucide-react";
 import { Button, Modal } from "@mantine/core";
-import videoSrc from "../../../../../public/videos/filmtest.mp4";
 export default function VideoPlayerModal() {
   const [opened, setOpened] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -14,9 +13,9 @@ export default function VideoPlayerModal() {
   const togglePlay = () => {
     if (videoRef.current) {
       if (isPlaying) {
-        videoRef.current.pause();
+        videoRef.current?.pause();
       } else {
-        videoRef.current.play();
+        videoRef.current?.play();
       }
       setIsPlaying(!isPlaying);
     }
@@ -24,7 +23,7 @@ export default function VideoPlayerModal() {
 
   const handleClose = () => {
     if (videoRef.current) {
-      videoRef.current.pause();
+      videoRef.current?.pause();
       setIsPlaying(false);
     }
     setOpened(false);
