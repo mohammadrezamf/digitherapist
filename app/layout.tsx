@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-import { createTheme, MantineProvider } from "@mantine/core";
+import { ColorSchemeScript, createTheme, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 
 export const metadata: Metadata = {
@@ -23,10 +23,21 @@ export default function RootLayout({
     fontFamily: "var(--font-iran-sans), sans-serif",
   });
   return (
-    <html lang="fa" dir="rtl" className={`${iranSans.variable} h-full scroll-smooth antialiased`}>
-      <MantineProvider theme={theme} forceColorScheme="light">
-        <body className="flex min-h-full flex-col">{children}</body>
-      </MantineProvider>
+    <html
+      lang="fa"
+      dir="rtl"
+      className={`${iranSans.variable} h-full scroll-smooth antialiased`}
+      suppressHydrationWarning
+    >
+      <head suppressHydrationWarning>
+        <ColorSchemeScript forceColorScheme="light" />
+        <title>test</title>
+      </head>
+      <body className="flex min-h-full flex-col">
+        <MantineProvider theme={theme} forceColorScheme="light">
+          {children}
+        </MantineProvider>
+      </body>
     </html>
   );
 }
