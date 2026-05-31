@@ -21,7 +21,7 @@ const FooterSection = () => {
               </div>
             </div>
             <p className="text-xs leading-relaxed text-slate-400">
-              سامانه هوشمند و ابری دیجی تراپیست اولین سیستم مدیریت تخصصی مطب و کلینیکی روانسناسی در
+              سامانه هوشمند و ابری دیجی تراپیست اولین سیستم مدیریت تخصصی مطب و کلینیکی روانشناسی در
               کشور است که با تکیه بر استانداردهای بین‌المللی طراحی و توسعه یافته است.
             </p>
             <div className="flex items-center gap-3 pt-2">
@@ -84,7 +84,7 @@ const FooterSection = () => {
             <ul className="space-y-3 text-xs">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-blue-500" />
-                <span style={{ direction: "ltr" }}>0937 533 2212</span>
+                <span style={{ direction: "ltr" }}>0911 6666 120</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="font-bold text-blue-500">📍</span>
@@ -102,14 +102,14 @@ const FooterSection = () => {
             <h4 className="text-sm font-bold text-white">مجوزها و تاییده‌ها</h4>
             <div className="grid grid-cols-2 gap-2">
               <div className="flex items-center justify-center rounded-xl border border-slate-800 bg-slate-900 p-3 text-center text-[10px] text-slate-400">
-                عضو رسمی صنف نرم‌افزارهای سلامت
+                عضو رسمی صنف نرم‌افزار
               </div>
-              <div className="flex items-center justify-center rounded-xl border border-slate-800 bg-slate-900 p-3 text-center text-[10px] text-slate-400">
-                سازمان نظام دندانپزشکی کشور
-              </div>
-              <div className="flex items-center justify-center rounded-xl border border-slate-800 bg-slate-900 p-3 text-center text-[10px] text-slate-400">
-                دارای نماد اعتماد الکترونیک ۵ ستاره
-              </div>
+              {/*<div className="flex items-center justify-center rounded-xl border border-slate-800 bg-slate-900 p-3 text-center text-[10px] text-slate-400">*/}
+              {/*  سازمان نظام دندانپزشکی کشور*/}
+              {/*</div>*/}
+              {/*<div className="flex items-center justify-center rounded-xl border border-slate-800 bg-slate-900 p-3 text-center text-[10px] text-slate-400">*/}
+              {/*  دارای نماد اعتماد الکترونیک*/}
+              {/*</div>*/}
               <div className="flex items-center justify-center rounded-xl border border-slate-800 bg-slate-900 p-3 text-center text-[10px] text-slate-400">
                 پشتیبان‌گیری رمزنگاری شده سرور ملی
               </div>
