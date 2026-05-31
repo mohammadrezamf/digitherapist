@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle2, Menu, X } from "lucide-react";
+import { CheckCircle2, Menu, MessageCircle, Phone, X } from "lucide-react";
 import TopSection from "@/app/(sections)/components/landing/top-section";
 import FeaturesSection from "@/app/(sections)/components/landing/fetaures-section";
 import WhyUsSection from "@/app/(sections)/components/landing/why-us-section";
@@ -9,7 +9,9 @@ import PainPointSection from "@/app/(sections)/components/landing/pain-point-sec
 import CallToAction from "@/app/(sections)/components/landing/call-to-action-section";
 import FooterSection from "@/app/(sections)/components/wrapper/footer";
 import Products from "@/app/(sections)/components/landing/products";
-import VideoPlayerModal from "@/app/(sections)/components/landing/video-player-modal";
+import ContactPopover from "@/app/(sections)/components/landing/contact-popover";
+
+const PHONE = "09116666120";
 
 export default function Landing() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -60,14 +62,8 @@ export default function Landing() {
 
             {/* CTA Actions */}
             <div className="hidden items-center gap-4 sm:flex">
-              <a
-                href="#demo"
-                className="transform rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-blue-500/10 transition-all hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-lg"
-              >
-                ثبت سفارش و هماهنگی
-              </a>
+              <ContactPopover />
             </div>
-
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -118,10 +114,20 @@ export default function Landing() {
 
             <div className="flex flex-col gap-3 border-t border-slate-100 pt-4">
               <a
-                href="#demo"
-                className="w-full rounded-lg bg-blue-600 py-2.5 text-center font-bold text-white"
+                href={`tel:${PHONE}`}
+                className="flex w-full items-center justify-center gap-2 rounded-lg bg-blue-600 py-2.5 text-center font-bold text-white"
               >
+                <Phone className="h-4 w-4" />
                 ثبت سفارش و هماهنگی
+              </a>
+              <a
+                href={`https://wa.me/98${PHONE.slice(1)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full items-center justify-center gap-2 rounded-lg border border-green-500 py-2.5 text-center font-bold text-green-600"
+              >
+                <MessageCircle className="h-4 w-4" />
+                واتساپ
               </a>
             </div>
           </div>
@@ -205,12 +211,12 @@ export default function Landing() {
         </div>
       </section>
       {/* Core Features Grid Section */}
-      <VideoPlayerModal />
+      {/*<VideoPlayerModal />*/}
       <FeaturesSection />
       <WhyUsSection />
       <Products />
       <PainPointSection />
-      <CallToAction />
+      {/*<CallToAction />*/}
       <FooterSection />
     </div>
   );

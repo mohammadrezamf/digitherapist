@@ -27,14 +27,15 @@ const TopSection = () => {
 
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
               <a
-                href="#demo"
-                className="w-full transform rounded-xl bg-blue-600 px-8 py-4 text-center font-extrabold text-white shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-1 hover:bg-blue-700 sm:w-auto"
+                href="tel:09116666120"
+                className="w-full rounded-xl bg-blue-600 px-6 py-3 text-center text-sm font-medium text-white transition-all hover:bg-blue-700 sm:w-auto"
               >
-                ثبت سفارش و هماهنگی
+                ثبت سفارش و هماهنگی: <span dir="ltr">0911 666 6120</span>
               </a>
+
               <a
                 href="#features"
-                className="w-full rounded-xl border border-slate-200 bg-white px-8 py-4 text-center font-bold text-slate-700 shadow-sm transition-all hover:bg-slate-50 hover:shadow-md sm:w-auto"
+                className="w-full rounded-xl border border-slate-200 bg-white px-6 py-3 text-center text-sm font-medium text-slate-700 transition-all hover:bg-slate-50 sm:w-auto"
               >
                 مشاهده امکانات و ماژول‌ها
               </a>

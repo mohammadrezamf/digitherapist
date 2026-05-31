@@ -5,11 +5,7 @@ import { Button, Modal } from "@mantine/core";
 export default function VideoPlayerModal() {
   const [opened, setOpened] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef(null);
-
-  // آدرس ویدیو در لوکال هاست (باید در پوشه public پروژه شما باشد)
-  // مثلاً public/videos/sample.mp4
-
+  const videoRef = useRef<HTMLVideoElement>(null);
   const togglePlay = () => {
     if (videoRef.current) {
       if (isPlaying) {

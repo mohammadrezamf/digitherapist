@@ -54,14 +54,14 @@ const Products = () => {
               </div>
             </div>
 
-            <div className="pt-8">
-              <a
-                href="#demo"
-                className="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-center text-xs font-bold text-slate-700 transition-colors hover:bg-slate-100"
-              >
-                شروع دوره آزمایشی رایگان
-              </a>
-            </div>
+            {/*<div className="pt-8">*/}
+            {/*  <a*/}
+            {/*    href="#demo"*/}
+            {/*    className="block rounded-xl border border-slate-200 bg-white px-4 py-3 text-center text-xs font-bold text-slate-700 transition-colors hover:bg-slate-100"*/}
+            {/*  >*/}
+            {/*    شروع دوره آزمایشی رایگان*/}
+            {/*  </a>*/}
+            {/*</div>*/}
           </div>
 
           {/* Pro Tier (Popular) */}
@@ -100,14 +100,14 @@ const Products = () => {
               </div>
             </div>
 
-            <div className="pt-8">
-              <a
-                href="#demo"
-                className="block rounded-xl bg-blue-500 px-4 py-3 text-center text-xs font-bold text-white shadow-lg shadow-blue-500/30 transition-colors hover:bg-blue-600"
-              >
-                خرید و ارتقا به داشبورد کلینیک
-              </a>
-            </div>
+            {/*<div className="pt-8">*/}
+            {/*  <a*/}
+            {/*    href="#demo"*/}
+            {/*    className="block rounded-xl bg-blue-500 px-4 py-3 text-center text-xs font-bold text-white shadow-lg shadow-blue-500/30 transition-colors hover:bg-blue-600"*/}
+            {/*  >*/}
+            {/*    خرید و ارتقا به داشبورد کلینیک*/}
+            {/*  </a>*/}
+            {/*</div>*/}
           </div>
 
           {/* Enterprise Tier */}
@@ -147,14 +147,14 @@ const Products = () => {
               </div>
             </div>
 
-            <div className="pt-8">
-              <a
-                href="tel:+982100000"
-                className="block rounded-xl bg-slate-800 px-4 py-3 text-center text-xs font-bold text-white transition-colors hover:bg-slate-900"
-              >
-                درخواست هماهنگی و دمو
-              </a>
-            </div>
+            {/*<div className="pt-8">*/}
+            {/*  <a*/}
+            {/*    href="tel:+982100000"*/}
+            {/*    className="block rounded-xl bg-slate-800 px-4 py-3 text-center text-xs font-bold text-white transition-colors hover:bg-slate-900"*/}
+            {/*  >*/}
+            {/*    درخواست هماهنگی و دمو*/}
+            {/*  </a>*/}
+            {/*</div>*/}
           </div>
         </div>
       </div>
