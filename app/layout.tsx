@@ -31,7 +31,6 @@ export default function RootLayout({
     >
       <head suppressHydrationWarning>
         <ColorSchemeScript forceColorScheme="light" />
-        <title>test</title>
       </head>
       <body className="flex min-h-full flex-col">
         <MantineProvider theme={theme} forceColorScheme="light">

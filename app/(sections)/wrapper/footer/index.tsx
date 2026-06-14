@@ -1,6 +1,6 @@
 import React from "react";
 import { Phone } from "lucide-react";
-import CopyRight from "@/app/(sections)/components/wrapper/copy-right";
+import CopyRight from "@/app/(sections)/wrapper/copy-right";
 
 const FooterSection = () => {
   return (

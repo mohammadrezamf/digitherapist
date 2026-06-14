@@ -1,6 +1,7 @@
 import React from "react";
-import { features } from "@/app/(sections)/components/landing/constant";
+
 import { ArrowRight } from "lucide-react";
+import { features } from "@/app/(sections)/home/components/landing/constant";
 
 const FeaturesSection = () => {
   return (
