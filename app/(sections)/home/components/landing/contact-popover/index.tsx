@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { CheckCircle2, Menu, X, Phone, MessageCircle } from "lucide-react";
 // ... other imports
 
-const PHONE = "09123456789"; // شماره خودت رو بذار
+const PHONE = "09375332212"; // شماره خودت رو بذار
 
 function ContactPopover() {
   const [open, setOpen] = useState(false);

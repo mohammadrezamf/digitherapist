@@ -15,10 +15,10 @@ const PainPointSection = () => {
 
           {/* دکمه تماس مینیمال شده */}
           <a
-            href="tel:09116666120"
+            href="tel:09375332212"
             className="shrink-0 rounded-xl bg-white px-8 py-3 text-sm font-medium text-red-600 shadow-lg transition-all hover:bg-red-50"
           >
-            ثبت‌نام و مشاوره: <span dir="ltr">0911 666 6120</span>
+            ثبت‌نام و مشاوره: <span dir="ltr">0937 533 2212</span>
           </a>
         </div>
       </div>

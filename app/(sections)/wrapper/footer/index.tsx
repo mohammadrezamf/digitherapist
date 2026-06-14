@@ -84,7 +84,7 @@ const FooterSection = () => {
             <ul className="space-y-3 text-xs">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-blue-500" />
-                <span style={{ direction: "ltr" }}>0911 6666 120</span>
+                <span style={{ direction: "ltr" }}>0937 533 2212</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="font-bold text-blue-500">📍</span>

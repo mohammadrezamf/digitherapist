@@ -27,10 +27,10 @@ const TopSection = () => {
 
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
               <a
-                href="tel:09116666120"
+                href="tel:09375332212"
                 className="w-full rounded-xl bg-blue-600 px-6 py-3 text-center text-sm font-medium text-white transition-all hover:bg-blue-700 sm:w-auto"
               >
-                ثبت سفارش و هماهنگی: <span dir="ltr">0911 666 6120</span>
+                ثبت سفارش و هماهنگی: <span dir="ltr">0937 533 2212</span>
               </a>
 
               <a

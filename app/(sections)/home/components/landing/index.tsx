@@ -9,7 +9,7 @@ import TopSection from "@/app/(sections)/home/components/landing/top-section";
 import ContactPopover from "@/app/(sections)/home/components/landing/contact-popover";
 import Link from "next/link";
 
-const PHONE = "09116666120";
+const PHONE = "09375332212";
 
 // ۱. افزودن Metadata برای سئو
 export const metadata: Metadata = {
