@@ -57,22 +57,22 @@ const FooterSection = () => {
               </li>
               <li>
                 <a href="#pricing" className="transition-colors hover:text-white">
-                  لیست کامل تعرفه اشتراک‌ها
+                  چرا دیجی تراپیست
                 </a>
               </li>
               <li>
                 <a href="#why-us" className="transition-colors hover:text-white">
-                  آمار رضایت و نظرسنجی مراجعین
+                  مقالات
                 </a>
               </li>
               <li>
                 <a href="#before-after" className="transition-colors hover:text-white">
-                  مقایسه دیجی تراپیست با نرم‌افزارهای قدیمی
+                  محصولات دیجی تراپیست
                 </a>
               </li>
               <li>
                 <a href="#faq" className="transition-colors hover:text-white">
-                  سوالات پرتکرار همکاران دندانپزشک
+                  سوالات پرتکرار همکاران روان شناس
                 </a>
               </li>
             </ul>
@@ -92,7 +92,7 @@ const FooterSection = () => {
               </li>
               <li className="flex items-center gap-2">
                 <span className="font-bold text-blue-500">📧</span>
-                <span>support@dandano.com</span>
+                <span>digi_therapist@gamil.com</span>
               </li>
             </ul>
           </div>

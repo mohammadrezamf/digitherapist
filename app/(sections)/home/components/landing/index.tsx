@@ -8,6 +8,7 @@ import FeaturesSection from "@/app/(sections)/home/components/landing/fetaures-s
 import TopSection from "@/app/(sections)/home/components/landing/top-section";
 import ContactPopover from "@/app/(sections)/home/components/landing/contact-popover";
 import Link from "next/link";
+import { appRoutes } from "@/app/constatns/app-routes";
 
 const PHONE = "09375332212";
 
@@ -100,13 +101,13 @@ export default function Landing() {
                 <a href="#why-us" className="transition-colors hover:text-blue-600">
                   چرا دیجی تراپیست؟
                 </a>
-                <a href="#before-after" className="transition-colors hover:text-blue-600">
-                  محیط کاربری
+                <a href={appRoutes.ARTICLES} className="transition-colors hover:text-blue-600">
+                  مقالات
                 </a>
-                <a href="#pricing" className="transition-colors hover:text-blue-600">
-                  تعرفه‌ها
+                <a href="#products" className="transition-colors hover:text-blue-600">
+                  محصولات
                 </a>
-                <a href="#faq" className="transition-colors hover:text-blue-600">
+                <a href="#questions" className="transition-colors hover:text-blue-600">
                   سوالات متداول
                 </a>
               </nav>
